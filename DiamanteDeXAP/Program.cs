@@ -4,18 +4,23 @@
     {
        
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        static void MenuInput()
+        {
+            Text.ShowMenu();
+            string input = Console.ReadLine();
+            if (input == "1")
+            {
+                // ValueInput(); ainda não programado
+            }
+            else if (input == "2")
+            {
+                Environment.Exit(0);
+            }
+        }
+
+
+
+
         public static void Enquire()
         {
             Console.WriteLine("Programa Finalizado, deseja reiniciar? (y/n)");
@@ -39,14 +44,11 @@
 
         } 
         
-        
-        
-        
-        
+  
         
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            MenuInput();
         }
     }
 }
