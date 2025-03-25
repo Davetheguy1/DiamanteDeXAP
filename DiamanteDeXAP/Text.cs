@@ -26,9 +26,9 @@ namespace DiamanteDeXAP
 
         public static void ErrorMessage1()
         {
-            Console.WriteLine("**");
+            Console.WriteLine("************");
             Console.WriteLine("Erro, Favor Informar um Valor Ímpar.");
-            Console.WriteLine("**");
+            Console.WriteLine("***********");
 
         }
 

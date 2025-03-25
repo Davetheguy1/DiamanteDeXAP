@@ -13,6 +13,7 @@ namespace DiamanteDeXAP
             if (playerValue % 2 == 0)
             {
                 Text.ErrorMessage1();
+                Console.ReadLine();
                 return false;
             }
             else
@@ -22,7 +23,15 @@ namespace DiamanteDeXAP
         }
 
 
-        
+        public static void CreateDiamond()
+        {
+            int baseValue = Program.playerValue;
+            
+            for (int i = 1; i <= baseValue; i++)
+            {
+                Console.Write("X");
+            }
+        }
 
 
 
