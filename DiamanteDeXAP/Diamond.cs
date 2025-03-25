@@ -8,7 +8,24 @@ namespace DiamanteDeXAP
 {
     class Diamond
     {
+        public static bool InputValidation(int playerValue)
+        {
+            if (playerValue % 2 == 0)
+            {
+                Text.ErrorMessage1();
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+
+
         
-    
+
+
+
+
     }
 }

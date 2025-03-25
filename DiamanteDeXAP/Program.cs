@@ -2,15 +2,15 @@
 {
     internal class Program
     {
-       
-        
+
+        public static int playerValue;
         static void MenuInput()
         {
             Text.ShowMenu();
             string input = Console.ReadLine();
             if (input == "1")
             {
-                // ValueInput(); ainda não programado
+                ValueInput();
             }
             else if (input == "2")
             {
@@ -18,7 +18,20 @@
             }
         }
 
-
+        public static void ValueInput()
+        {
+            Text.ValueInputText();
+            playerValue = int.Parse(Console.ReadLine());
+            bool isValid = Diamond.InputValidation(playerValue);
+            if (isValid == true)
+            {
+                // createDiamond();
+            }
+            else
+            {
+                ValueInput();
+            }
+        }
 
 
         public static void Enquire()
