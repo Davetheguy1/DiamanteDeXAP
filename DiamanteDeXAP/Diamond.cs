@@ -8,7 +8,6 @@ namespace DiamanteDeXAP
 {
     class Diamond
     {
-        public static List<int> numsPerString = new List<int> { };
 
         public static bool InputValidation(int playerValue)
         {
@@ -25,36 +24,32 @@ namespace DiamanteDeXAP
         }
 
 
-        public static void CreateDiamondList()
+        public static void CreateDiamond()
         {
-            
-            
             int baseValue = Program.playerValue;
 
 
-            Console.WriteLine("\n\n");
-            while (baseValue != 0 && baseValue > 0)
-            {
+            string firstString = new string('X', baseValue);
+            
+            
+            
+            
+            
+            Console.WriteLine("     {0}       ");
+            Console.WriteLine("     {0}       ");
+            Console.WriteLine("     {0}       ");
+            Console.WriteLine("     {0}       ");
+            Console.WriteLine("     {0}       ");
+            Console.WriteLine("     {0}       ");
+            Console.WriteLine("     {0}       ", firstString);
+            Console.WriteLine("     {0}       ");
+            Console.WriteLine("     {0}       ");
+            Console.WriteLine("     {0}       ");
+            Console.WriteLine("     {0}       ");
+            Console.WriteLine("     {0}       ");
+            Console.WriteLine("     {0}       ");
+             
 
-                for (int i = 1; i <= baseValue; i++)
-                {
-
-                    Console.Write("X");
-                    numsPerString.Add(i);
-                }
-                
-                
-                baseValue = baseValue - 2;
-                Console.WriteLine("\n");
-                Console.WriteLine();
-            }
-
-            Console.WriteLine(string.Join(", ", numsPerString)); // pra testes
-        }
-
-        public static void CreateDiamondGraph()
-        {
-            // ainda não programado.
         }
 
 

@@ -25,7 +25,7 @@
             bool isValid = Diamond.InputValidation(playerValue);
             if (isValid == true)
             {
-                Diamond.CreateDiamondList();
+                Diamond.CreateDiamond();
             }
             else
             {
