@@ -15,6 +15,11 @@
             else if (input == "2")
             {
                 Environment.Exit(0);
+            } else
+            {
+                Console.WriteLine("Erro, Escolha uma Opção Válida");
+                Console.ReadLine();
+                MenuInput();
             }
         }
 
@@ -26,6 +31,7 @@
             if (isValid == true)
             {
                 Diamond.CreateDiamond();
+                Enquire();
             }
             else
             {
@@ -41,7 +47,7 @@
 
             if (enquire == "y")
             {
-                //Calls Previous Function Back
+                MenuInput();
 
             } else if (enquire == "n")
             {

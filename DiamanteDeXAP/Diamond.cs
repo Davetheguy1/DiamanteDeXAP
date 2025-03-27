@@ -28,46 +28,57 @@ namespace DiamanteDeXAP
         {
             int baseValue = Program.playerValue;
 
+            int lnValue = (baseValue - 1) / 2;
+            int spaceValue = (baseValue - 1) / 2;
+
+            int xString = 1;
+
+            //upper
+            for (int ln = 0; ln < lnValue; ln++)
+            {
+                for (int spaces = 0; spaces < spaceValue; spaces++)
+                    Console.Write(" ");
+                
+              
+                for (int x = 0; x < xString; x++)
+                    Console.Write("X");
+
+                xString += 2;
+                spaceValue--;
+                Console.WriteLine();
+            }
+
+
+            //middle
+            for (int i = 0; i < baseValue; i++)
+            {
+                Console.Write("X");
+            }
+
+            Console.WriteLine();
+
+
+            //lower
+
+            xString -= 2;
+            spaceValue = 1;
+
+            for (int ln = 0; ln < lnValue; ln++)
+            {
+                for (int spaces = 0; spaces < spaceValue; spaces++)
+                    Console.Write(" ");
+
+
+                for (int x = 0; x < xString; x++)
+                    Console.Write("X");
+
+                xString -= 2;
+                spaceValue++;
+                Console.WriteLine();
+            }
+
+
             
-                string firstString = new string('X', baseValue);
-                string secondString = new string('X', (baseValue - 2));
-                string thirdString = new string('X', (baseValue - 4));
-                string fourthString = new string('X', (baseValue - 6));
-                string fifhtString = new string('X', (baseValue - 8));
-                string sixthString = new string('X', (baseValue - 10));
-                string seventhString = new string('X', baseValue - 12);
-                string eighthString = new string('X', baseValue - 14);
-                string ninthString = new string('X', baseValue - 16);
-                string tenthString = new string('X', baseValue - 18);
-                string eleventhString = new string('X', baseValue - 20);
-
-
-
-
-                Console.WriteLine("      {0}      ", eleventhString);
-                Console.WriteLine("      {0}      ", tenthString);
-                Console.WriteLine("      {0}      ", ninthString);
-                Console.WriteLine("      {0}      ", eighthString);
-                Console.WriteLine("      {0}      ", seventhString);
-                Console.WriteLine("      {0}      ", sixthString);
-                Console.WriteLine("      {0}      ", fifhtString);
-                Console.WriteLine("      {0}      ", fourthString);
-                Console.WriteLine("      {0}      ", thirdString);
-                Console.WriteLine("      {0}      ", secondString);
-                Console.WriteLine("      {0}      ", firstString);
-                Console.WriteLine("      {0}      ", secondString);
-                Console.WriteLine("      {0}      ", thirdString);
-                Console.WriteLine("      {0}      ", fourthString);
-                Console.WriteLine("      {0}      ", fifhtString);
-                Console.WriteLine("      {0}      ", sixthString);
-                Console.WriteLine("      {0}      ", seventhString);
-                Console.WriteLine("      {0}      ", eighthString);
-                Console.WriteLine("      {0}      ", ninthString);
-                Console.WriteLine("      {0}      ", tenthString);
-                Console.WriteLine("      {0}      ", eleventhString);
-            
-            
-             Program.Enquire();
 
         }
 
