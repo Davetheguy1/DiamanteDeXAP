@@ -47,7 +47,7 @@
 
             if (enquire == "y")
             {
-                MenuInput();
+                ValueInput();
 
             } else if (enquire == "n")
             {
